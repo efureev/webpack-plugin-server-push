@@ -1,0 +1,18 @@
+.DS_Store
+node_modules
+public
+coverage
+
+yarn.lock
+package-lock.json
+
+# editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+/tsconfig.json

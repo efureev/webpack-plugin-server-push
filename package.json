@@ -1,0 +1,36 @@
+{
+  "name": "@feugene/webpack-plugin-server-push",
+  "version": "0.0.1",
+  "description": "Create Nginx conf for assets bundle for Server Push (http2)",
+  "main": "dist/index.js",
+  "keywords": [
+    "request",
+    "webpack",
+    "webpack-plugin",
+    "server-push"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/efureev/webpack-plugin-server-push",
+  "scripts": {
+    "code-format": "prettier --config ./.prettierrc.js --write ./src/**/*.{js,vue}",
+    "lint": "eslint --fix ./src/**/*",
+    "prettier": "prettier --write ./src/** ./tests/**",
+    "test": "mocha -r esm -r @babel/register --reporter=landing tests"
+  },
+  "peerDependencies": {
+    "webpack": ">=4.0.0 < 6.0.0"
+  },
+  "dependencies": {
+    "@feugene/mu": "^2.21.0",
+    "@types/webpack": "4.41.27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efureev/webpack-plugin-server-push.git"
+  },
+  "files": [
+    "index.js",
+    "typings.d.ts"
+  ],
+  "types": "typings.d.ts"
+}

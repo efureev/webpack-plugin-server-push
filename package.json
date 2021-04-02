@@ -28,9 +28,5 @@
     "type": "git",
     "url": "https://github.com/efureev/webpack-plugin-server-push.git"
   },
-  "files": [
-    "index.js",
-    "typings.d.ts"
-  ],
   "types": "typings.d.ts"
 }

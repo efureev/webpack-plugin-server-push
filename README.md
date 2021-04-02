@@ -5,9 +5,9 @@ This plugin creates configs for HTTP/2 Server Push for Nginx and other web-serve
 ## Install
 
 ```sh
-yarn add -D nginx-push-webpack-plugin
+yarn add -D @feugene/webpack-plugin-server-push
 # or 
-npm install -D nginx-push-webpack-plugin
+npm install -D @feugene/webpack-plugin-server-push
 ```
 
 

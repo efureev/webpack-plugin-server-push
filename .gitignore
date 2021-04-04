@@ -14,5 +14,3 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw*
-
-/tsconfig.json

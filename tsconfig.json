@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // Target latest version of ECMAScript.
+    "target": "esnext",
+    // Specify module code generation: 'commonjs', 'amd', 'system', 'umd' or 'es2015'.
+    "module": "commonjs",
+    /* Redirect output structure to the directory. */
+    "outDir": "dist",
+    /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "rootDir": "src",
+    /* Generates corresponding '.d.ts' file. */
+    "declaration": true,
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Process & infer types from .js files.
+    "allowJs": true,
+    // Don't emit; allow Babel to transform files.
+    "noEmit": true,
+    "pretty": true,
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+    // Disallow features that require cross-file information for emit.
+    "isolatedModules": true,
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "dev-utils"
+  ]
+}

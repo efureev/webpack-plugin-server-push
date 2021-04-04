@@ -17,7 +17,7 @@ npm install -D @feugene/webpack-plugin-server-push
 
 ```js
 // vue.config.js
-const ServerPushWebpackPlugin = require('@feugene/webpack-plugin-server-push')
+const ServerPushWebpackPlugin = require('@feugene/webpack-plugin-server-push').default
 
 const vueConfig = {
     publicPath: '/',
@@ -33,8 +33,10 @@ const vueConfig = {
         plugins: [
             new ServerPushWebpackPlugin({
               target: 'nginx',
-              omitLocation: true,
-              filename: 'nginx.server-push.conf',
+              options: {
+                omitLocation: true,
+                filename: 'nginx.server-push.conf',
+              },
             })
         ],
     }
@@ -92,7 +94,7 @@ module.exports = {
     filename: 'index_bundle.js'
   },
   plugins: [
-    new ServerPushWebpackPlugin({ target:'nginx', index: 'index.html' })
+    new ServerPushWebpackPlugin({ target:'nginx', options:{index: 'index.html' }})
   ]
 }
 ```

@@ -18,7 +18,6 @@ class ServerPushWebpackPlugin {
         const {target} = options
 
         if (typeof target === 'string') {
-
             this.target = this.buildTarget(target, options.options)
         } else {
             this.target = target

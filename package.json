@@ -1,8 +1,7 @@
 {
   "name": "@feugene/webpack-plugin-server-push",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Create Nginx conf for assets bundle for Server Push (http2)",
-  "type": "module",
   "keywords": [
     "request",
     "webpack",

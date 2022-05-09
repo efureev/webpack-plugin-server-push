@@ -93,7 +93,9 @@ class ServerPushWebpackPlugin {
         }
 
         const assets = chunks.reduce((prev: any, chunk: any) => {
-            const chunkFiles = [].concat(chunk.files).map((chunkFile) => publicPath + chunkFile)
+            const chunkFiles = []
+                .concat(chunk.files).map((chunkFile) => publicPath + chunkFile)
+                .concat(chunk.auxiliaryFiles).map((auxiliaryFile) => publicPath + auxiliaryFile);
             return prev.concat(chunkFiles)
         }, [])
 

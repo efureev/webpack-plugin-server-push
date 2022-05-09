@@ -84,7 +84,7 @@ server {
 
 ```js
 // webpack.config.js
-const ServerPushWebpackPlugin = require('@feugene/webpack-plugin-server-push')
+const ServerPushWebpackPlugin = require('@feugene/webpack-plugin-server-push').default
 
 module.exports = {
   entry: 'index.js',

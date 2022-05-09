@@ -25,11 +25,11 @@
     "node": ">= 14"
   },
   "dependencies": {
-    "@types/webpack": "4.41.27"
+    "@types/webpack": "^5.28.0"
   },
   "devDependencies": {
-    "typescript": "^4.2.3",
-    "webpack": "5.30.0"
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0"
   },
   "repository": {
     "type": "git",

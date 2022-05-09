@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Target_1 = require("./Target");
 class NginxTarget extends Target_1.AbstractTarget {
+    omitLocation = false;
     constructor(options) {
         super(options);
-        this.omitLocation = false;
         if (options.omitLocation) {
             this.omitLocation = options.omitLocation;
         }

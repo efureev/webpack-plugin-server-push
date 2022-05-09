@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AbstractTarget = void 0;
 class AbstractTarget {
+    filename = 'push.conf';
+    index = 'index.html';
     constructor(options) {
-        this.filename = 'push.conf';
-        this.index = 'index.html';
         if (options.filename) {
             this.filename = options.filename;
         }

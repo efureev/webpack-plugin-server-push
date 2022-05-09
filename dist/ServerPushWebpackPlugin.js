@@ -7,6 +7,7 @@ const path_1 = __importDefault(require("path"));
 const NginxTarget_1 = __importDefault(require("./NginxTarget"));
 const unique = (value) => value.filter((value, index, self) => self.indexOf(value) === index);
 class ServerPushWebpackPlugin {
+    target;
     constructor(options) {
         const { target } = options;
         if (typeof target === 'string') {
@@ -58,7 +59,9 @@ class ServerPushWebpackPlugin {
             publicPath += '/';
         }
         const assets = chunks.reduce((prev, chunk) => {
-            const chunkFiles = [].concat(chunk.files).map((chunkFile) => publicPath + chunkFile);
+            const chunkFiles = []
+                .concat(chunk.files).map((chunkFile) => publicPath + chunkFile)
+                .concat(chunk.auxiliaryFiles).map((auxiliaryFile) => publicPath + auxiliaryFile);
             return prev.concat(chunkFiles);
         }, []);
         return unique(assets);
